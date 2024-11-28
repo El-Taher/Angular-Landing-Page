@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  onUnsubscripe() {
+  onUnsubscribe() {
     window.confirm('Do you really want to unsubscribe?');
   }
 }

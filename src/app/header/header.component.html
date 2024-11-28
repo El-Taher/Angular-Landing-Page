@@ -24,8 +24,12 @@
     </ul>
     <button
       class="bg-red-500 hover:bg-red-600 text-white px-24 py-4 rounded-md font-medium mt-8 font-mono"
+      (click)="onAdding()"
     >
       PRE-QUALIFY NOW
     </button>
   </div>
 </div>
+@if (isAdding) {
+  <app-qualification-form (close)="onClosing()" />
+}
